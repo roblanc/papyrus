@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Papyrus",
+  "version": "1.0",
+  "description": "A simple and customizable new tab extension for taking notes.",
+  "chrome_url_overrides": {
+    "newtab": "new_tab.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "webfonts/*"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}

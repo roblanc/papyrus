@@ -1,0 +1,105 @@
+:root {
+  --bg-color: #1a1a1a;
+  --text-color: #fff;
+  --header-text-color: #666;
+  --button-bg-color: transparent;
+  --button-text-color: #fff;
+  --button-hover-bg-color: #333;
+}
+
+body.light-theme {
+  --bg-color: #f0f2f5;
+  --text-color: #333;
+  --header-text-color: #999;
+  --button-bg-color: transparent;
+  --button-text-color: #333;
+  --button-hover-bg-color: #e0e0e0;
+}
+
+body.borland-theme {
+  --bg-color: #000080; /* Dark blue */
+  --text-color: #c0c0c0; /* Light gray */
+  --header-text-color: #808080; /* Gray */
+  --button-bg-color: transparent;
+  --button-text-color: #c0c0c0;
+  --button-hover-bg-color: #0000ff;
+}
+
+body {
+  font-family: 'Fira Code', monospace;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  justify-content: center; /* Center the content vertically */
+  align-items: center; /* Center the content horizontally */
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.main-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 80vh; /* Give it a height */
+  margin: 0 auto; /* Centered horizontally */
+}
+
+.main-content-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#ascii-header {
+  font-family: monospace;
+  font-size: 0.64rem;
+  color: var(--header-text-color);
+}
+
+#theme-toggle {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+#theme-toggle:hover {
+  background-color: var(--button-hover-bg-color);
+}
+
+textarea {
+  width: 100%;
+  /* Removed height: 100%; */
+  background-color: transparent;
+  color: var(--text-color);
+  border: none;
+  resize: none;
+  font-family: 'Fira Code', monospace;
+  font-size: 1rem;
+  padding: 0;
+  overflow: auto; /* Changed to auto to allow scrolling */
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+textarea:focus {
+  outline: none;
+}
