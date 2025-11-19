@@ -25,6 +25,36 @@ body.borland-theme {
   --button-hover-bg-color: #0000ff;
 }
 
+/* Solarized Dark Theme */
+body.solarized-dark {
+  --bg-color: #002b36; /* Solarized base03 */
+  --text-color: #839496; /* Solarized base0 */
+  --header-text-color: #586e75; /* Solarized base01 */
+  --button-bg-color: transparent;
+  --button-text-color: #839496;
+  --button-hover-bg-color: #073642; /* Solarized base02 */
+}
+
+/* Solarized Light Theme */
+body.solarized-light {
+  --bg-color: #fdf6e3; /* Solarized base3 */
+  --text-color: #657b83; /* Solarized base00 */
+  --header-text-color: #93a1a1; /* Solarized base1 */
+  --button-bg-color: transparent;
+  --button-text-color: #657b83;
+  --button-hover-bg-color: #eee8d5; /* Solarized base2 */
+}
+
+/* Dracula Theme */
+body.dracula {
+  --bg-color: #282a36; /* Dracula background */
+  --text-color: #f8f8f2; /* Dracula foreground */
+  --header-text-color: #6272a4; /* Dracula comment */
+  --button-bg-color: transparent;
+  --button-text-color: #f8f8f2;
+  --button-hover-bg-color: #44475a; /* Dracula selection */
+}
+
 body {
   font-family: 'Fira Code', monospace;
   background-color: var(--bg-color);
